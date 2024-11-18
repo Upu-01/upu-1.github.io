@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+    width: 1440px;
+    height: auto;
+    background-color: aqua;
+    margin: 0 auto;
+}
+
+.galery__item{
+    width: 300px;
+    height: 450px;
+
+}
+
+.Galery__img{
+    object-fit: cover;
+    height: 100%;
+}
+
+.Galery__txt{
+    text-align: center;
+    font-size: 28px;
+    font-family: sans-serif;
+}
+
+.galery{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* адаптив под 390 пикселей */
+@media screen and (max-width:390px) {
+    .container{
+        background: red;
+        width: 390px;
+    }
+
+    .galery{
+        flex-direction: column;
+        align-items: center;
+    }
+    .galery__item{
+        margin-bottom: 60px;
+    }
+}
